@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route, Redirect  } from 'react-router-dom';
 
 import Home from './pages/Home';
 
-export default (props) => {
+export default function Routes(){
 
     return (
         <BrowserRouter>

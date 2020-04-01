@@ -24,8 +24,4 @@ export default createGlobalStyle`
     body, input, button {
         font-family: Arial, Helvetica, sans-serif;
     }
-
-    ul {
-        list-style: none;
-    }
 `;
