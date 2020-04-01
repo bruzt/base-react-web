@@ -83,4 +83,18 @@ const Container = styled.div`
         text-decoration: none;
         color: white;
     }
+
+    @media (max-width: 1024px) {
+
+        .nav-show ul li {
+            margin: 0 75px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .nav-show ul li {
+            margin: 0 50px;
+        }
+    }
 `;

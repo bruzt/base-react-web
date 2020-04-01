@@ -14,9 +14,9 @@ export default function Home() {
 
             <Header />
 
-            <MenuFixedTop />
+            <MenuFixedTop className='menu-top' />
 
-            <MenuTop />
+            <MenuTop className='menu-top' />
 
             <Main />
 
@@ -28,4 +28,10 @@ export default function Home() {
 
 const Container = styled.div`
    
+   @media (max-width: 425px) {
+
+        .menu-top {
+            display: none;
+        }
+    }
 `;

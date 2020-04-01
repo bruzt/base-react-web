@@ -41,4 +41,11 @@ const Container = styled.nav`
         position: fixed;
         top: 0;
     }
+
+    @media (max-width: 768px) {
+
+        ul li {
+            margin: 0 50px;
+        }
+    }
 `;
