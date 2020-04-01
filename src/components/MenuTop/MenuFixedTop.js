@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import { Waypoint } from 'react-waypoint';
 
 import logo from '../../assets/logo-200x100.jpg';
@@ -30,7 +31,9 @@ export default function MenuFixedTop(props) {
 
             <nav className={(fixedState) ? 'nav-show' : ''}>
                 
-                <img src={logo} alt="Logo" />
+                <Link to='/' className='img-link'>
+                    <img src={logo} alt="Logo" />
+                </Link>
 
                 <MenuList />
             </nav>
@@ -55,14 +58,16 @@ const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-
     }
 
-    .nav-show img {
-        display: block;
-        height: 50px;
+    .nav-show .img-link {
         position: absolute;
         left: 0;
+    }
+
+    .nav-show a img {
+        display: block;
+        height: 50px;
     }
 
     .nav-show ul {

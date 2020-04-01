@@ -42,6 +42,7 @@ const Container = styled.header`
 
     a img {
         height: 100px;
+        display: block;
     }
 
     ul {
