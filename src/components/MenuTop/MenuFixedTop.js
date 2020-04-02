@@ -28,14 +28,15 @@ export default function MenuFixedTop(props) {
                 onEnter={hideFixedMenu}
                 onLeave={showFixedMenu}
             />
-
-            <nav className={(fixedState) ? 'nav-show' : ''}>
                 
-                <Link to='/' className='img-link'>
-                    <img src={logo} alt="Logo" />
-                </Link>
+            <nav className={(fixedState) ? 'nav-show' : ''}>
+                <div>
+                    <Link to='/' className='img-link'>
+                        <img src={logo} alt="Logo" />
+                    </Link>
 
-                <MenuList />
+                    <MenuList />
+                </div>
             </nav>
 
         </Container>
@@ -46,54 +47,58 @@ const Container = styled.div`
 
     nav {
         display: none;
-    }      
-
-    .nav-show {
         width: 100%;
         height: 50px;
         position: fixed;
         top: 0;
         background: black;
+    }      
+
+    nav div {
+        width: 100%;
+        max-width: 1300px;
+        height: 100%;
+        margin: 0 auto;
 
         display: flex;
-        justify-content: center;
         align-items: center;
     }
 
-    .nav-show .img-link {
-        position: absolute;
-        left: 0;
+    .nav-show {
+        display: flex;
     }
 
-    .nav-show a img {
+    .nav-show div a img {
         display: block;
         height: 50px;
     }
 
-    .nav-show ul {
+    .nav-show div ul {
         display: flex;
         list-style: none;
+        width: 100%;
+        justify-content: center;
     }
 
-    .nav-show ul li {
+    .nav-show div ul li {
         margin: 0 100px;
     }
 
-    .nav-show ul li a {
+    .nav-show div ul li a {
         text-decoration: none;
         color: white;
     }
 
     @media (max-width: 1024px) {
 
-        .nav-show ul li {
+        .nav-show div ul li {
             margin: 0 75px;
         }
     }
 
     @media (max-width: 768px) {
 
-        .nav-show ul li {
+        .nav-show div ul li {
             margin: 0 50px;
         }
     }

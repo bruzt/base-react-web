@@ -10,22 +10,24 @@ export default function Header(props) {
     return (
         <Container {...props}>
 
-            <Link to='/'>
-                <img src={logo} alt='Logo' />
-            </Link>
+            <div id='header-content'>
+                <Link to='/'>
+                    <img src={logo} alt='Logo' />
+                </Link>
 
-            <ul>
-                <li>
-                    <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook size={40} title='Facebook' />
-                    </a>
-                </li>
-                <li>
-                    <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter size={40} title='Twitter' />
-                    </a>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                            <FaFacebook size={40} title='Facebook' />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <FaTwitter size={40} title='Twitter' />
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
         </Container>
     );
@@ -36,9 +38,15 @@ const Container = styled.header`
     height: 100px;
     background: ${props => props.theme.secondary};
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    #header-content {
+        width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     a img {
         height: 100px;
@@ -60,8 +68,10 @@ const Container = styled.header`
         padding: 25px 0;
     }
 
-    ul li a :hover{
-        background: blue;
+    @media (max-width: 320px) {
+        
+        ul li {
+            margin: 0 10px 0 0;
+        }
     }
-
 `;
