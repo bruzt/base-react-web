@@ -108,7 +108,7 @@ const Container = styled.div`
         font-size: 20px;
     }
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
         display: flex;
         justify-content: space-between;
         align-items: center;

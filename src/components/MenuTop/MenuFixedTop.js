@@ -95,11 +95,4 @@ const Container = styled.div`
             margin: 0 75px;
         }
     }
-
-    @media (max-width: 768px) {
-
-        .nav-show div ul li {
-            margin: 0 50px;
-        }
-    }
 `;

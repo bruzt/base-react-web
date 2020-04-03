@@ -48,11 +48,4 @@ const Container = styled.nav`
             margin: 0 50px;
         }
     }
-
-    @media (max-width: 768px) {
-
-        ul li {
-            margin: 0 40px;
-        }
-    }
 `;
