@@ -92,7 +92,7 @@ const Container = styled.div`
     @media (max-width: 1024px) {
 
         .nav-show div ul li {
-            margin: 0 75px;
+            margin: 0 60px;
         }
     }
 `;
