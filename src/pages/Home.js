@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import ThemeSwitchButton from '../components/ThemeSwitchButton';
 import Header from '../components/Header';
 import MenuTop from '../components/MenuTop/MenuTop';
 import MenuFixedTop from '../components/MenuTop/MenuFixedTop';
@@ -12,6 +13,8 @@ export default function Home() {
 
     return (
         <Container>
+
+            <ThemeSwitchButton />
 
             <Header />
 
