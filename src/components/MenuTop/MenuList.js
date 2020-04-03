@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 export default function MenuList(props) {
 
     return (
-        <ul {...props}>
+        <Ul {...props}>
                 <li>
                     <Link to='/'>
                         <p>Página 1</p>
@@ -28,6 +29,19 @@ export default function MenuList(props) {
                         <p>Página 4</p>
                     </Link>
                 </li>
-        </ul>
+        </Ul>
     );
 }
+
+const Ul = styled.ul`
+
+    li a {
+        display: block;
+        padding: 16px;
+    }
+
+    li a:hover {
+        background: #212224;
+        transition-duration: 0.2s;
+    }
+`;

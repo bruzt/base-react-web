@@ -42,10 +42,17 @@ const Container = styled.nav`
         top: 0;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
 
         ul li {
             margin: 0 50px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        ul li {
+            margin: 0 40px;
         }
     }
 `;
