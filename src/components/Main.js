@@ -17,5 +17,6 @@ const Container = styled.nav`
     min-height: 1000px;
     margin: 0 auto;
 
-    border: 1px solid red;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 `;

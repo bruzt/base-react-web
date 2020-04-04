@@ -37,7 +37,7 @@ const Ul = styled.ul`
 
     li a {
         display: block;
-        padding: 16px;
+        padding: 16px 30px;
     }
 
     li a:hover {

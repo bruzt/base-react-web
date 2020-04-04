@@ -64,35 +64,42 @@ const Container = styled.div`
         align-items: center;
     }
 
-    .nav-show {
-        display: flex;
-    }
-
-    .nav-show div a img {
+    nav div a img {
         display: block;
         height: 50px;
     }
 
-    .nav-show div ul {
+    nav div ul {
         display: flex;
         list-style: none;
         width: 100%;
-        justify-content: center;
     }
 
-    .nav-show div ul li {
-        margin: 0 100px;
+    nav div ul li {
+        margin-left: 20px;
     }
 
-    .nav-show div ul li a {
+    nav div ul li + li {
+        margin-left: 200px;
+    }
+
+    nav div ul li a {
         text-decoration: none;
         color: white;
+    }
+
+    .nav-show {
+        display: flex;
     }
 
     @media (max-width: 1024px) {
 
         .nav-show div ul li {
-            margin: 0 60px;
+            margin-left: 31px;
+        }
+
+        .nav-show div ul li + li {
+            margin-left: 100px;
         }
     }
 `;
